@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shivarchi Computer Classes</title>
   <style>
     body {
@@ -20,12 +20,18 @@
       margin-top: 40px;
       color: #333;
     }
-    img {
-      max-width: 90%;
-      height: auto;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 45%;
       border-radius: 10px;
-      margin-top: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 10px;
     }
     .courses {
       display: flex;
@@ -64,27 +70,13 @@
     a.button:hover {
       background: #005bb5;
     }
-    /* Gallery design */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 45%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      margin: 10px;
-    }
   </style>
 </head>
 <body>
 
   <h1>Welcome to Shivarchi Computer Classes</h1>
 
-  <!-- ✅ Image Gallery -->
+  <!--  Image Gallery -->
   <div class="gallery">
     <img src="LAB1.JPG" alt="Lab 1">
     <img src="LAB2.JPG" alt="Lab 2">
@@ -99,4 +91,16 @@
       <p>Duration: 2 Months</p>
     </div>
     <div class="card">
-      <h3>Ta
+      <h3>Tally with GST</h3>
+      <p>Duration: 3 Months</p>
+    </div>
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Duration: 4 Months</p>
+    </div>
+  </div>
+
+  <a href="courses.html" class="button">View All Courses</a>
+
+</body>
+</html>

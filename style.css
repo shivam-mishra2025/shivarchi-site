@@ -16,3 +16,8 @@ nav a {
   margin: 0 15px;
   font-weight: bold;
 }
+img {
+  width: 300px;
+  border-radius: 12px;
+  margin: 10px;
+}

@@ -1,31 +1,79 @@
-<link rel="stylesheet" href="style.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Courses - Shivarchi</title>
+  <title>Our Courses - Shivarchi Computer Classes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px 0;
+      color: #333;
+    }
+    .courses {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      margin: 0;
+      color: #0073e6;
+    }
+    .card p {
+      margin: 5px 0;
+      color: #444;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; background: #f4f4f4; padding:20px;">
-  <h1 style="text-align:center; color:#2c3e50;">📚 Our Courses</h1>
-
-  <ul style="max-width:600px; margin:20px auto; font-size:18px; line-height:1.8;">
-    <li>MS Office – ₹3,000</li>
-    <li>C Programming – ₹4,000</li>
-    <li>C++ Programming – ₹4,500</li>
-    <li>Python – ₹6,000</li>
-    <li>Java – ₹7,000</li>
-    <li>Data Structures & Algorithms – ₹8,000</li>
-    <li>Full Stack Development – ₹15,000</li>
-    <li>Digital Marketing – ₹12,000</li>
-    <li>Tally with GST + AI – ₹10,000</li>
-  </ul>
-
-  <div style="text-align:center; margin-top:30px;">
-    <a href="index.html" style="padding:10px 20px; background:#3498db; color:white; text-decoration:none; border-radius:5px;">⬅ Back to Home</a>
+<body>
+  <h1>Our Courses</h1>
+  <div class="courses">
+    
+    <div class="card">
+      <h3>MS Office</h3>
+      <p>Duration: 2 Months</p>
+      <p>Fees: ₹4000</p>
+    </div>
+    
+    <div class="card">
+      <h3>Tally with GST</h3>
+      <p>Duration: 3 Months</p>
+      <p>Fees: ₹4500</p>
+    </div>
+    
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Duration: 4 Months</p>
+      <p>Fees: ₹6500</p>
+    </div>
+    
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>Duration: 3 Months</p>
+      <p>Fees: ₹10000</p>
+    </div>
+    
   </div>
 </body>
-</html> 
-<footer style="background:#333; color:white; padding:10px; margin-top:20px;">
-  © 2025 Shivarchi Computer Classes | All Rights Reserved
-</footer>
+</html>

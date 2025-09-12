@@ -21,16 +21,42 @@
       color: #333;
     }
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     .gallery img {
-      width: 45%;
+      width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .courses {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      margin: 0;
+      color: #0073e6;
     }
   </style>
 </head>
@@ -48,7 +74,20 @@
   </div>
 
   <h2>Popular Courses</h2>
-  <p>MS Office | Tally with GST | Python Programming</p>
+  <div class="courses">
+    <div class="card">
+      <h3>MS Office</h3>
+      <p>Duration: 2 Months</p>
+    </div>
+    <div class="card">
+      <h3>Tally with GST</h3>
+      <p>Duration: 3 Months</p>
+    </div>
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Duration: 4 Months</p>
+    </div>
+  </div>
 
 </body>
 </html>

@@ -3,37 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Shivarchi Computer Classes</title>
+  <title>Contact - Shivarchi Computer Classes</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; text-align: center; }
-    nav { display: flex; align-items: center; justify-content: center; gap: 20px; background: #111; padding: 10px; }
-    nav img { height: 50px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    h1 { color: #0073e6; margin-top: 20px; }
-    .contact-box { margin: 30px auto; width: 80%; max-width: 500px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    footer { background: #111; color: white; padding: 15px; margin-top: 30px; }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f9; }
+    header { background:#0073e6; color:white; text-align:center; padding:15px; }
+    .contact {
+      max-width: 600px; margin: 40px auto; padding: 20px;
+      background:white; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 { color:#0073e6; text-align:center; }
+    p { font-size:16px; }
+    .map { margin-top:20px; text-align:center; }
+    iframe { width:100%; height:300px; border-radius:10px; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
 
-  <nav>
-    <img src="logo.png" alt="logo.png">
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="contact">
+    <h2>Shivarchi Computer Classes</h2>
+    <p><b>Address:</b> Near Main Market, Shivarchi Computer Classes</p>
+    <p><b>Mobile:</b> +91 9876543210</p>
+    <p><b>Email:</b> info@shivarchi.com</p>
 
-  <h1>Contact Us</h1>
-  <div class="contact-box">
-    <p><b>📍 Address:</b> Shivarchi Computer Classes 34,sanchar nagar kanadiya road indore</p>
-    <p><b>📞 Mobile:</b> +91-8770942035</p>
-    <p><b>✉️ Email:</b> shivarchiofficial@gmail.com</p>
-    <p><b>🌐 Website:</b> www.shivarchi.com</p>
+    <div class="map">
+      <h3>Find Us Here</h3>
+      <!-- Replace src with your exact Google Maps embed link -->
+      <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+    </div>
   </div>
-
-  <footer>
-    <p>© 2025 Shivarchi Computer Classes | Build Your Future</p>
-  </footer>
-
 </body>
 </html>

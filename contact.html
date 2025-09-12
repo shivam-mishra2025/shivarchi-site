@@ -3,86 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Shivarchi Computer Classes</title>
+  <title>Contact Us - Shivarchi Computer Classes</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    nav {
-      background: #0073e6;
-      padding: 12px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      margin-top: 20px;
-      color: #0073e6;
-    }
-    p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    a.button {
-      display: inline-block;
-      margin: 20px;
-      padding: 10px 20px;
-      background: #0073e6;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-    a.button:hover {
-      background: #005bb5;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; text-align: center; }
+    nav { display: flex; align-items: center; justify-content: center; gap: 20px; background: #111; padding: 10px; }
+    nav img { height: 50px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    h1 { color: #0073e6; margin-top: 20px; }
+    .contact-box { margin: 30px auto; width: 80%; max-width: 500px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    footer { background: #111; color: white; padding: 15px; margin-top: 30px; }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
+    <img src="logo.png" alt="Shivarchi Logo">
     <a href="index.html">Home</a>
     <a href="courses.html">Courses</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <h1>Contact Us</h1>
-  <p><b>Phone:</b> +91-9876543210</p>
-  <p><b>Email:</b> shivarchi@gmail.com</p>
-  <a href="https://wa.me/919876543210" target="_blank" class="button">💬 Chat on WhatsApp</a>  <!-- Footer Section -->
-  <footer style="background:#0073e6; color:white; padding:20px; margin-top:40px;">
-    <p><b>Shivarchi Computer Classes</b></p>
-    <p>Near Main Market, Your City, India</p>
-    <p>📞 +91-8770942035 | 📧 shivarchi@gmail.com</p>
-    
-    <!-- Social Links -->
-    <p>
-      <a href="https://facebook.com" target="_blank" style="color:white; margin:0 10px;">Facebook</a> |
-      <a href="https://instagram.com" target="_blank" style="color:white; margin:0 10px;">Instagram</a> |
-      <a href="https://wa.me/919876543210" target="_blank" style="color:white; margin:0 10px;">WhatsApp</a>
-    </p>
+  <div class="contact-box">
+    <p><b>📍 Address:</b> Shivarchi Computer Classes</p>
+    <p><b>📞 Mobile:</b> +91-8770942035</p>
+    <p><b>✉️ Email:</b> shivarchiofficial@gmail.com</p>
+    <p><b>🌐 Website:</b> www.shivarchi.com</p>
+  </div>
 
-    <!-- Google Map -->
-    <div style="margin-top:20px;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.994226918415!2d80.94524361504447!3d26.846693983158665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2c7a0a1efcd%3A0x6d9c69c38d0f8d79!2sLucknow%20UP!5e0!3m2!1sen!2sin!4v1675852145678!5m2!1sen!2sin" 
-        width="300" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-    <p style="margin-top:10px; font-size:14px;">© 2025 Shivarchi Computer Classes. All Rights Reserved.</p>
+  <footer>
+    <p>© 2025 Shivarchi Computer Classes | Build Your Future</p>
   </footer>
-
 
 </body>
 </html>

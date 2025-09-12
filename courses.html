@@ -3,42 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Courses - Shivarchi Computer Classes</title>
+  <title>Courses - Shivarchi Computer Classes</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; text-align: center; }
-    nav { display: flex; align-items: center; justify-content: center; gap: 20px; background: #111; padding: 10px; }
-    nav img { height: 50px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    h1 { color: #0073e6; margin-top: 20px; }
-    .courses { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-    .card { border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 220px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .card h3 { color: #0073e6; }
-    footer { background: #111; color: white; padding: 15px; margin-top: 30px; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; }
+    header { background: #0073e6; color: white; padding: 15px; text-align: center; }
+    h1 { margin: 0; }
+    .courses {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 30px;
+    }
+    .card {
+      border: 1px solid #ccc; border-radius: 10px; padding: 20px;
+      width: 220px; background: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s; text-align: center;
+    }
+    .card:hover { transform: scale(1.05); box-shadow: 0 8px 12px rgba(0,0,0,0.2); }
+    .card h3 { margin: 0; color: #0073e6; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Our Courses</h1>
+  </header>
 
-  <nav>
-    <img src="logo.png" alt="logo.png">
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <h1>Our Courses</h1>
   <div class="courses">
-    <div class="card"><h3>MS Office</h3><p>Word, Excel, PowerPoint</p></div>
-    <div class="card"><h3>Tally with GST</h3><p>Accounting & GST Filing</p></div>
-    <div class="card"><h3>Python Programming</h3><p>Beginner to Advanced</p></div>
-    <div class="card"><h3>Web Development</h3><p>HTML, CSS, JS</p></div>
-    <div class="card"><h3>Spoken English</h3><p>Fluency & Confidence</p></div>
+    <div class="card">
+      <h3>MS Office</h3>
+      <p>Duration: 2 Months</p>
+    </div>
+    <div class="card">
+      <h3>Tally with GST</h3>
+      <p>Duration: 3 Months</p>
+    </div>
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Duration: 4 Months</p>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Duration: 6 Months</p>
+    </div>
+    <div class="card">
+      <h3>Basic Computer</h3>
+      <p>Duration: 1 Month</p>
+    </div>
   </div>
-
-  <footer>
-    <p>📍 Location: Shivarchi Computer Classes 34,sanchar nagar kanadiya road indore</p>
-    <p>📞 Mobile: +91-8770942035</p>
-    <p>✉️ Email: shivarchiofficial@gmail.com</p>
-  </footer>
-
 </body>
 </html>

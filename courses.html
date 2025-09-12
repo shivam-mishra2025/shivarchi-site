@@ -3,73 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses - Shivarchi Computer Classes</title>
+  <title>Our Courses - Shivarchi Computer Classes</title>
   <style>
-  <!-- Footer Section -->
-  <footer style="background:#0073e6; color:white; padding:20px; margin-top:40px;">
-    <p><b>Shivarchi Computer Classes</b></p>
-    <p>Near Main Market, Your City, India</p>
-    <p>📞 +91-8770942035 | 📧 shivarchi@gmail.com</p>
-    
-    <!-- Social Links -->
-    <p>
-      <a href="https://facebook.com" target="_blank" style="color:white; margin:0 10px;">Facebook</a> |
-      <a href="https://instagram.com" target="_blank" style="color:white; margin:0 10px;">Instagram</a> |
-      <a href="https://wa.me/919876543210" target="_blank" style="color:white; margin:0 10px;">WhatsApp</a>
-    </p>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; text-align: center; }
+    nav { display: flex; align-items: center; justify-content: center; gap: 20px; background: #111; padding: 10px; }
+    nav img { height: 50px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    h1 { color: #0073e6; margin-top: 20px; }
+    .courses { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .card { border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 220px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .card h3 { color: #0073e6; }
+    footer { background: #111; color: white; padding: 15px; margin-top: 30px; }
+  </style>
+</head>
+<body>
 
-    <!-- Google Map -->
-    <div style="margin-top:20px;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.994226918415!2d80.94524361504447!3d26.846693983158665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2c7a0a1efcd%3A0x6d9c69c38d0f8d79!2sLucknow%20UP!5e0!3m2!1sen!2sin!4v1675852145678!5m2!1sen!2sin" 
-        width="300" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+  <nav>
+    <img src="logo.png" alt="Shivarchi Logo">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <p style="margin-top:10px; font-size:14px;">© 2025 Shivarchi Computer Classes. All Rights Reserved.</p>
+  <h1>Our Courses</h1>
+  <div class="courses">
+    <div class="card"><h3>MS Office</h3><p>Word, Excel, PowerPoint</p></div>
+    <div class="card"><h3>Tally with GST</h3><p>Accounting & GST Filing</p></div>
+    <div class="card"><h3>Python Programming</h3><p>Beginner to Advanced</p></div>
+    <div class="card"><h3>Web Development</h3><p>HTML, CSS, JS</p></div>
+    <div class="card"><h3>Spoken English</h3><p>Fluency & Confidence</p></div>
+  </div>
+
+  <footer>
+    <p>📍 Location: Shivarchi Computer Classes</p>
+    <p>📞 Mobile: +91-8770942035</p>
+    <p>✉️ Email: shivarchiofficial@gmail.com</p>
   </footer>
-body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    nav {
-      background: #0073e6;
-      padding: 12px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      margin-top: 20px;
-      color: #0073e6;
-    }
-    .course-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .course {
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 20px;
-      width: 220px;
-      background: white;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-    .course:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-    }
-    .course h3 {
-      m
+
+</body>
+</html>

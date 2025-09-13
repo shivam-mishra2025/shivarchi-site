@@ -1,3 +1,11 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 /* Navigation Bar */
 nav {
   background: #005bb5;
@@ -25,14 +33,14 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
-  padding: 5px 10px;      /* bigger hover area */
-  border-radius: 5px;     /* optional rounded effect */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* Hover effect */
 nav ul li a:hover {
   color: #ffdd00;
-  background: rgba(255, 221, 0, 0.2);  /* subtle background on hover */
+  background: rgba(255, 221, 0, 0.2);
 }
 
 /* Responsive for mobile */
@@ -42,4 +50,23 @@ nav ul li a:hover {
     gap: 15px;
     align-items: center;
   }
+}
+
+/* Page sections styling (optional, for testing scrolling) */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background: #f4f4f4;
+}
+
+section:nth-child(odd) {
+  background: #e0e0e0;
+}
+
+section h1 {
+  font-size: 2rem;
+  color: #333;
 }

@@ -1,26 +1,96 @@
+/* ===== Global Styling ===== */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
-  text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-h1 {
-  color: #0073e6;
+/* ===== Navbar ===== */
+nav {
+    background-color: #0077b6;
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
-  color: white;
-  margin: 0 15px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
 }
-img {
-  width: 300px;
-  border-radius: 12px;
-  margin: 10px;
+
+nav a:hover {
+    text-decoration: underline;
 }
-<footer style="background:#333; color:white; padding:10px; margin-top:20px;">
-  © 2025 Shivarchi Computer Classes | All Rights Reserved
-</footer>
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+}
+
+header img {
+    max-width: 120px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+/* ===== Courses Section ===== */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.course-box {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.course-box:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Gallery Section ===== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* ===== Contact Section ===== */
+iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

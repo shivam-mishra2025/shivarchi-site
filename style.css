@@ -1,97 +1,45 @@
-/* General styling */
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f9;
+/* Navigation Bar */
+nav {
+  background: #005bb5;
+  padding: 10px 0;
+}
+
+/* Navbar list */
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-header {
-  background: #0073e6;
-  color: white;
-  padding: 15px;
-}
-
-header img {
-  width: 60px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-header h1 {
+/* List items */
+nav ul li {
   display: inline;
-  font-size: 24px;
 }
 
-/* Gallery */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  padding: 20px;
-}
-
-.gallery img {
-  width: 45%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Courses section */
-.courses {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  width: 200px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-}
-
-.card h3 {
-  margin: 0;
-  color: #0073e6;
-}
-
-/* Buttons */
-a.button {
-  display: inline-block;
-  margin: 20px;
-  padding: 10px 20px;
-  background: #0073e6;
+/* Links */
+nav ul li a {
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  font-weight: bold;
   transition: 0.3s;
+  padding: 5px 10px;      /* bigger hover area */
+  border-radius: 5px;     /* optional rounded effect */
 }
 
-a.button:hover {
-  background: #005bb5;
+/* Hover effect */
+nav ul li a:hover {
+  color: #ffdd00;
+  background: rgba(255, 221, 0, 0.2);  /* subtle background on hover */
 }
 
-/* Contact + Map */
-.contact {
-  padding: 30px;
-  background: #fff;
-}
-
-iframe {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
 }

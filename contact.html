@@ -3,36 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Shivarchi Computer Classes</title>
+  <title>Contact Us - Shivarchi Computer Classes</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f9; }
-    header { background:#0073e6; color:white; text-align:center; padding:15px; }
-    .contact {
-      max-width: 600px; margin: 40px auto; padding: 20px;
-      background:white; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
-    h2 { color:#0073e6; text-align:center; }
-    p { font-size:16px; }
-    .map { margin-top:20px; text-align:center; }
-    iframe { width:100%; height:300px; border-radius:10px; }
+    header {
+      background: #0073e6;
+      color: white;
+      padding: 15px 0;
+    }
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+    h1 {
+      margin: 10px 0 0;
+    }
+    .contact-info {
+      margin: 30px 0;
+    }
+    .contact-info p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #0073e6;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    form button:hover {
+      background: #005bb5;
+    }
+    iframe {
+      margin: 20px 0;
+      border-radius: 10px;
+      width: 90%;
+      height: 400px;
+    }
+    footer {
+      background: #0073e6;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Contact Us</h1>
+    <img src="logo.png" alt="Logo">
+    <h1>Contact Shivarchi Computer Classes</h1>
   </header>
 
-  <div class="contact">
-    <h2>Shivarchi Computer Classes</h2>
-    <p><b>Address:</b> 34,sanchar nagar kanadiya above mendanta lab indore, Shivarchi Computer Classes</p>
-    <p><b>Mobile:</b> +91 8770942035</p>
-    <p><b>Email:</b> info@shivarchi.com</p>
-
-    <div class="map">
-      <h3>Find Us Here</h3>
-      <!-- Replace src with your exact Google Maps embed link -->
-      <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0364787167236!2d75.92444914982057!3d22.72688547640554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e3ad63a6b80d%3A0x4f166d6c30a9bbce!2sShivarchi%20Computer%20Classes!5e0!3m2!1sen!2sus!4v1757689228222!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" allowfullscreen></iframe>
-    </div>
+  <div class="contact-info">
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Email:</strong> info@shivarchi.com</p>
+    <p><strong>Address:</strong> Near XYZ Chowk, Your City, India</p>
   </div>
+
+  <form>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <h2>Find Us on Map</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.112005030518!2d90.41251831498142!3d23.810331284560056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7abf2b2a7f7%3A0xa0f0f0c3c9c1a2e!2sYour%20Institute%20Name!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <footer>
+    <p>&copy; 2025 Shivarchi Computer Classes. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>

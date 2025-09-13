@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar Example</title>
+  <title>My Website</title>
   <style>
-    /* Reset default margins and paddings */
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -13,32 +13,29 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Navigation Bar */
+    /* Navbar */
     nav {
       background: #005bb5;
       padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     nav ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
       justify-content: center;
       gap: 30px;
-    }
-
-    nav ul li {
-      display: inline;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
       padding: 5px 10px;
       border-radius: 5px;
+      transition: 0.3s;
     }
 
     nav ul li a:hover {
@@ -46,7 +43,6 @@
       background: rgba(255, 221, 0, 0.2);
     }
 
-    /* Responsive for mobile */
     @media (max-width: 768px) {
       nav ul {
         flex-direction: column;
@@ -55,7 +51,7 @@
       }
     }
 
-    /* Page sections */
+    /* Sections */
     section {
       padding: 100px 20px;
       text-align: center;
@@ -87,7 +83,7 @@
     </ul>
   </nav>
 
-  <!-- Page Content -->
+  <!-- Sections -->
   <section id="home">
     <h1>Welcome to Home</h1>
   </section>

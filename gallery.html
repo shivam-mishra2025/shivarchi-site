@@ -5,60 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery - Shivarchi Computer Classes</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #0073e6;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: white;
-    }
-    header img {
-      height: 50px;
-      margin-right: 10px;
-    }
-    header h2 { margin: 0; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
+    body { font-family: Arial, sans-serif; background:#f4f4f9; margin:0; padding:0; text-align:center; }
+    header { background:#0073e6; color:white; padding:15px; }
+    nav a { margin:0 15px; color:white; text-decoration:none; font-weight:bold; }
     nav a:hover { text-decoration: underline; }
-    h1 { text-align: center; color: #333; margin: 20px 0; }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
+    h1 { color:#0073e6; margin-top:20px; }
+    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; padding:20px; }
+    .gallery img { width:40%; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); }
+    footer { background:#0073e6; color:white; text-align:center; padding:20px; margin-top:30px; }
+    footer a { color:white; text-decoration:none; margin:0 8px; }
   </style>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
   <header>
-    <div style="display:flex; align-items:center;">
-      <img src="logo.png" alt="Logo">
-      <h2>Shivarchi Computer Classes</h2>
-    </div>
+    <h1>Our Gallery</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="courses.html">Courses</a>
@@ -67,16 +27,17 @@
     </nav>
   </header>
 
-  <h1>Our Gallery</h1>
-
   <div class="gallery">
-    <img src="photo1.jpg" alt="Classroom Photo">
-    <img src="photo2.jpg" alt="Students">
-    <img src="photo3.jpg" alt="Training Session">
-    <img src="photo4.jpg" alt="Lab">
-    <img src="photo5.jpg" alt="Event">
-    <img src="photo6.jpg" alt="Certificate Distribution">
+    <img src="lab1.jpg" alt="Lab 1">
+    <img src="lab2.jpg" alt="Lab 2">
+    <img src="lab3.jpg" alt="Lab 3">
+    <img src="front.jpg" alt="Front View">
   </div>
 
+  <footer>
+    <p>&copy; 2025 Shivarchi Computer Classes. All Rights Reserved.</p>
+    <p>📞 <a href="tel:+918770942035">+91 8770942035</a> | 📧 <a href="mailto:shivarchiofficial@gmail.com">shivarchiofficial@gmail.com</a></p>
+    <p><a href="https://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a> | <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+  </footer>
 </body>
 </html>

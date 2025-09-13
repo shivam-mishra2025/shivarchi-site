@@ -3,50 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses - Shivarchi Computer Classes</title>
+  <title>Our Courses - Shivarchi Computer Classes</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; }
-    header { background: #0073e6; color: white; padding: 15px; text-align: center; }
-    h1 { margin: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0073e6;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    header img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    header h2 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #333;
+    }
     .courses {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
     .card {
-      border: 1px solid #ccc; border-radius: 10px; padding: 20px;
-      width: 220px; background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      background: white;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: 0.3s; text-align: center;
+      transition: 0.3s;
+      text-align: center;
     }
-    .card:hover { transform: scale(1.05); box-shadow: 0 8px 12px rgba(0,0,0,0.2); }
-    .card h3 { margin: 0; color: #0073e6; }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      color: #0073e6;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <header>
-    <h1>Our Courses</h1>
+    <div style="display:flex; align-items:center;">
+      <img src="logo.png" alt="Logo">
+      <h2>Shivarchi Computer Classes</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
+
+  <h1>Our Courses</h1>
 
   <div class="courses">
     <div class="card">
       <h3>MS Office</h3>
       <p>Duration: 2 Months</p>
+      <p>Learn Word, Excel, PowerPoint & more for daily productivity.</p>
     </div>
     <div class="card">
       <h3>Tally with GST</h3>
       <p>Duration: 3 Months</p>
+      <p>Master accounting, GST filing, and financial management.</p>
     </div>
     <div class="card">
       <h3>Python Programming</h3>
       <p>Duration: 4 Months</p>
+      <p>Beginner to advanced Python for projects & job-ready skills.</p>
     </div>
     <div class="card">
       <h3>Web Development</h3>
       <p>Duration: 6 Months</p>
+      <p>Learn HTML, CSS, JavaScript & build responsive websites.</p>
     </div>
     <div class="card">
-      <h3>Basic Computer</h3>
+      <h3>Computer Basics</h3>
       <p>Duration: 1 Month</p>
+      <p>Perfect for beginners to start learning computers.</p>
     </div>
   </div>
+
 </body>
 </html>

@@ -1,83 +1,17 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Header */
-header {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-header img {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-header h1 {
-  font-size: 28px;
-  margin-bottom: 5px;
-}
-header p {
-  font-size: 16px;
-}
-
-/* Navigation */
-nav {
-  background: #34495e;
-  text-align: center;
-  padding: 10px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Gallery Section */
-.gallery {
+/* Courses Page */
+.courses {
   padding: 30px;
   text-align: center;
 }
-.gallery h2 {
-  font-size: 24px;
+.courses h2 {
   margin-bottom: 20px;
   color: #2c3e50;
 }
-.gallery .images {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.gallery img {
-  width: 250px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Courses Section */
-.courses {
+.course-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 30px;
 }
 .card {
   border: 1px solid #ccc;
@@ -87,7 +21,6 @@ nav a:hover {
   background: white;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: 0.3s;
-  text-align: center;
 }
 .card:hover {
   transform: scale(1.05);
@@ -96,38 +29,4 @@ nav a:hover {
 .card h3 {
   margin-bottom: 10px;
   color: #0073e6;
-}
-.card p {
-  margin: 5px 0;
-}
-
-/* Contact Section */
-.contact {
-  text-align: center;
-  padding: 30px;
-}
-.contact h2 {
-  margin-bottom: 20px;
-  color: #2c3e50;
-}
-.contact p {
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-/* Footer */
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-footer a {
-  color: yellow;
-  text-decoration: none;
-  margin: 0 10px;
-}
-footer a:hover {
-  text-decoration: underline;
 }

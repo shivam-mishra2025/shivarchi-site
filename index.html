@@ -1,104 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivarchi Computer Classes</title>
   <style>
-    /* Reset */
-    * {
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      text-align: center;
     }
-
-    /* Navbar */
-    nav {
-      background: #005bb5;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    h1 {
+      margin-top: 20px;
+      color: #0073e6;
     }
-
-    nav ul {
-      list-style: none;
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 10px;
+    }
+    .courses {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
     }
-
-    nav ul li a {
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      margin: 0;
+      color: #0073e6;
+    }
+    a.button {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #0073e6;
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      padding: 5px 10px;
       border-radius: 5px;
       transition: 0.3s;
     }
-
-    nav ul li a:hover {
-      color: #ffdd00;
-      background: rgba(255, 221, 0, 0.2);
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-      }
-    }
-
-    /* Sections */
-    section {
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    section:nth-child(even) {
-      background: #f4f4f4;
-    }
-
-    section:nth-child(odd) {
-      background: #e0e0e0;
-    }
-
-    section h1 {
-      font-size: 2rem;
-      color: #333;
+    a.button:hover {
+      background: #005bb5;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <h1>Welcome to Shivarchi Computer Classes</h1>
 
-  <!-- Sections -->
-  <section id="home">
-    <h1>Welcome to Home</h1>
-  </section>
+  <!--  Image Gallery -->
+  <div class="gallery">
+    <img src="LAB1.JPG" alt="Lab 1">
+    <img src="LAB2.JPG" alt="Lab 2">
+    <img src="LAB3.JPG" alt="Lab 3">
+    <img src="FRONT.JPG" alt="Front View">
+  </div>
 
-  <section id="about">
-    <h1>About Us</h1>
-  </section>
+  <h2>Popular Courses</h2>
+  <div class="courses">
+    <div class="card">
+      <h3>MS Office</h3>
+      <p>Duration: 2 Months</p>
+    </div>
+    <div class="card">
+      <h3>Tally with GST</h3>
+      <p>Duration: 3 Months</p>
+    </div>
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Duration: 4 Months</p>
+    </div>
+  </div>
 
-  <section id="services">
-    <h1>Our Services</h1>
-  </section>
-
-  <section id="contact">
-    <h1>Contact Us</h1>
-  </section>
+  <a href="courses.html" class="button">View All Courses</a>
 
 </body>
 </html>

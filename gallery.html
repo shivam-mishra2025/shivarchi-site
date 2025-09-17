@@ -4,40 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery - Shivarchi Computer Classes</title>
-  <style>
-    body { font-family: Arial, sans-serif; background:#f4f4f9; margin:0; padding:0; text-align:center; }
-    header { background:#0073e6; color:white; padding:15px; }
-    nav a { margin:0 15px; color:white; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration: underline; }
-    h1 { color:#0073e6; margin-top:20px; }
-    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; padding:20px; }
-    .gallery img { width:40%; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); }
-    footer { background:#0073e6; color:white; text-align:center; padding:20px; margin-top:30px; }
-    footer a { color:white; text-decoration:none; margin:0 8px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Shivarchi Computer Classes Gallery - View our computer labs, classrooms, and institute environment.">
+  <meta name="keywords" content="shivarchi computer classes gallery, computer lab, institute photos, indore">
+  <meta name="author" content="Shivarchi Computer Classes">
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
+    <img src="logo.png" alt="Logo">
     <h1>Our Gallery</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="courses.html">Courses</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
   </header>
 
-  <div class="gallery">
-    <img src="lab1.jpg" alt="Lab 1">
-    <img src="lab2.jpg" alt="Lab 2">
-    <img src="lab3.jpg" alt="Lab 3">
-    <img src="front.jpg" alt="Front View">
-  </div>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Gallery Section -->
+  <section>
+    <h2>Institute & Lab Photos</h2>
+    <div class="gallery">
+      <img src="lab1.jpg" alt="Computer Lab 1">
+      <img src="lab2.jpg" alt="Computer Lab 2">
+      <img src="lab3.jpg" alt="Computer Lab 3">
+      <img src="front.jpg" alt="Front View of Institute">
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Shivarchi Computer Classes. All Rights Reserved.</p>
-    <p>📞 <a href="tel:+918770942035">+91 8770942035</a> | 📧 <a href="mailto:shivarchiofficial@gmail.com">shivarchiofficial@gmail.com</a></p>
-    <p><a href="https://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a> | <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+    <p>© 2025 Shivarchi Computer Classes | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>

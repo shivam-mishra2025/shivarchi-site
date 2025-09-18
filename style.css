@@ -1,21 +1,38 @@
 /* Navigation */
 nav {
-  background: #FFD700;   /* Yellow-Gold */
-  padding: 15px 0;       /* सिर्फ ऊपर-नीचे spacing */
-  margin: 0;             /* किसी तरह का gap नहीं */
+  background: #FFD700;       /* Yellow-Gold */
+  padding: 10px 20px;
+  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-nav a {
-  color: black;          /* Yellow पर black readable रहेगा */
-  text-decoration: none;
-  margin: 0 20px;
+/* Logo */
+nav .logo {
+  font-size: 22px;
   font-weight: bold;
-  font-size: 16px;
+  color: black;
 }
 
-nav a:hover {
+/* Menu Links */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
   text-decoration: underline;
 }

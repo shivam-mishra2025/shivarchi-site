@@ -9,8 +9,6 @@ body {
 
 /* Navigation */
 nav {
-  /* Navigation */
-nav {
   background: #FFD700;   /* Yellow-Gold */
   padding: 15px;
 }
@@ -22,6 +20,8 @@ nav a {
 }
 nav a.active {
   text-decoration: underline;
+}
+
 }
 
 }

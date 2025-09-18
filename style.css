@@ -9,17 +9,21 @@ body {
 
 /* Navigation */
 nav {
-  background: #0073e6;
+  /* Navigation */
+nav {
+  background: #FFD700;   /* Yellow-Gold */
   padding: 15px;
 }
 nav a {
-  color: white;
+  color: black;          /* Dark text so it looks readable on yellow */
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
 }
 nav a.active {
   text-decoration: underline;
+}
+
 }
 
 /* About Section */

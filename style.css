@@ -34,12 +34,23 @@ nav a.active {
 
 /* Poster */
 .poster img {
-  max-width: 90%;
+ /* Poster */
+.poster img {
+  max-width: 50%;   /* Desktop/Laptop पर 50% width */
   height: auto;
   margin: 20px auto;
   display: block;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Mobile view ke liye (screen < 768px) */
+@media (max-width: 768px) {
+  .poster img {
+    max-width: 80%;   /* Mobile पर थोड़ा बड़ा */
+  }
+}
+
 }
 
 /* Footer */
